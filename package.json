@@ -24,10 +24,21 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^13.0.2",
     "@cypress/xpath": "^2.0.2",
     "allure-commandline": "^2.18.1",
     "cypress": "^10.10.0",
     "cypress-real-events": "^1.7.2",
     "mocha-allure-reporter": "^1.4.0"
+  },
+  "devDependencies": {
+    "@cypress/browserify-preprocessor": "^3.0.2"
+  },
+  
+  
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "stepDefinitions":"cypress/e2e/step_definitions/*.js"
   }
+  
 }
