@@ -1,0 +1,33 @@
+{
+  "name": "boilerplate-cypress-alurereport",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tests:Headless": "npx cypress run",
+    "tests:Headed": "npx cypress run --headed",
+    "open:Cypress": "npx cypress open",
+    "generate:AllureReport": "npx allure generate allure-results --clean -o allure-report && rimraf ./allure-results",
+    "open:AllureReport": "allure open  allure-report",
+    "clean:AllureResults": "rimraf ./allure-results",
+    "tests-on-Chrome:Headless": "cypress run --browser chrome",
+    "tests-on-Firefox:Headless": "cypress run --browser firefox",
+    "tests-on-Edge:Headless": "cypress run --browser edge",
+    "tests-on-Electron:Headless": "cypress run --browser electron",
+    "tests-on-Chrome:Headed": "cypress run --browser chrome --headed",
+    "tests-on-Firefox:Headed": "cypress run --browser firefox --headed",
+    "tests-on-Edge:Headed": "cypress run --browser edge --headed",
+    "tests-on-Electron:Headed": "cypress run --browser electron --headed",
+    "tests:Local": "cypress run --config baseUrl=https://example.cypress.io/todo --headed",
+    "tests:Stage": "cypress run --config baseUrl=https://google.com --headed"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@cypress/xpath": "^2.0.2",
+    "allure-commandline": "^2.18.1",
+    "cypress": "^10.10.0",
+    "cypress-real-events": "^1.7.2",
+    "mocha-allure-reporter": "^1.4.0"
+  }
+}

@@ -1,0 +1,40 @@
+name: Playwright Tests
+on:
+  push:
+    branches: [ master ]
+  # pull_request:
+  #   branches: [ master ]
+jobs:
+  test:
+    # timeout-minutes: 60
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
+      with:
+        node-version: 16.x
+    - name: Install dependencies
+      run: npm install
+    - name: Run tests
+      run: npx cypress run
+    - name: Generate Report
+      if: always()
+      run: npx allure generate allure-results --clean -o allure-report 
+    # - name: Upload Results
+    #   uses: actions/upload-artifact@v1
+    #   if: always()
+    #   with:
+    #      name: allure-results
+    #      path: ./allure-results
+    # - name: Publishing Allure artifact to Github Actions
+    #   uses: actions/upload-artifact@v2
+    #   if: always()
+    #   with:
+    #      name: allure-report
+    #      path: allure-report
+    - name: Deploy report
+      uses: JamesIves/github-pages-deploy-action@4.1.4
+      if: always()
+      with:
+          branch: gh-pages 
+          folder: allure-report
