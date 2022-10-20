@@ -1,7 +1,2 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Thu Oct 20 11:24:55 UTC 2022","Thu Oct 20 11:24:55 UTC 2022","520","","example to-do app","","example to-do app","can add new todo items","can add new todo items",""
-"passed","Thu Oct 20 11:24:54 UTC 2022","Thu Oct 20 11:24:55 UTC 2022","695","","example to-do app","","example to-do app","displays two todo items by default","displays two todo items by default",""
-"passed","Thu Oct 20 11:24:56 UTC 2022","Thu Oct 20 11:24:56 UTC 2022","311","","example to-do app with a checked task","","example to-do app with a checked task","can filter for completed tasks","can filter for completed tasks",""
-"passed","Thu Oct 20 11:24:56 UTC 2022","Thu Oct 20 11:24:56 UTC 2022","380","","example to-do app with a checked task","","example to-do app with a checked task","can filter for uncompleted tasks","can filter for uncompleted tasks",""
-"passed","Thu Oct 20 11:24:55 UTC 2022","Thu Oct 20 11:24:56 UTC 2022","270","","example to-do app","","example to-do app","can check off an item as completed","can check off an item as completed",""
-"passed","Thu Oct 20 11:24:56 UTC 2022","Thu Oct 20 11:24:57 UTC 2022","233","","example to-do app with a checked task","","example to-do app with a checked task","can delete all completed tasks","can delete all completed tasks",""
+"failed","Thu Oct 20 21:39:08 UTC 2022","Thu Oct 20 21:39:19 UTC 2022","10762","","""Switch + save Telnyx"" form","","""Switch + save Telnyx"" form","Check the default condition of the module ""Switch+save Telnyx""","Check the default condition of the module ""Switch+save Telnyx""",""
