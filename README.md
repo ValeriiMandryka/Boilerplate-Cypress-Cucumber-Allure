@@ -16,7 +16,7 @@ Template repository for project based on Cypress framefork with configurated Git
 ## 1. Run command in VSC:
 
 ```
-git clone https://github.com/ValeriiMandryka/Boilerplate-Cypress-AllureReport.git
+git clone https://github.com/ValeriiMandryka/Boilerplate-Cypress-Cucumber-AllureReport.git
 
 ```
 ## 2. Into root of Project run commands:
