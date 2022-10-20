@@ -10,7 +10,8 @@ Template repository for project based on Cypress framefork with configurated Git
 ##  Plugins:
    1. [cypress-xpath](https://github.com/cypress-io/cypress-xpath)
    2. [cypress-real-event](https://github.com/dmtrKovalenko/cypress-real-events)
-   3. [cypress-broserify-preprocessor](https://github.com/cypress-io/cypress-browserify-preprocessor)
+   3. [cypress-broserify-preprocessor](https://github.com/badeball/cypress-cucumber-preprocessor)
+   4. [cypress-broserify-preprocessor](https://github.com/cypress-io/cypress-browserify-preprocessor)
 
 ## Steps to install project
 
